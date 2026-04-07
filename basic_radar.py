@@ -7,11 +7,12 @@ import json
 def main():
 
     #only run one at a time
-    #speed_detector()
-    distance_detector()
+    run_speed()
+    run_distance()
 
+    
 
-def distance_detector():
+def run_distance():
     client = a121.Client.open(serial_port="/dev/ttyUSB0")
 
     distance_detector = DistanceDetector (
@@ -50,7 +51,7 @@ def distance_detector():
     distance_detector.stop()
     client.close()
 
-def speed_detector():
+def run_speed():
     client = a121.Client.open(serial_port="/dev/ttyUSB0")
 
     speed_detector = SpeedDetector(
@@ -90,4 +91,3 @@ def speed_detector():
 
 if __name__ == "__main__":
     main()
-

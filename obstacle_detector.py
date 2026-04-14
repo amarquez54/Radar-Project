@@ -13,7 +13,7 @@ detector_config = DetectorConfig(
     end_m=1,
     num_mean_threshold=1.5,
     num_std_threshold=4.0, 
-    sweeps_per_frame=15, 
+    sweeps_per_frame=4, 
     max_robot_speed=0.1
 )
 

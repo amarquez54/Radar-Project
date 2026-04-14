@@ -7,8 +7,8 @@ import json
 def main():
 
     #only run one at a time
-    run_speed()
-    run_distance()
+   run_speed()
+    #run_distance()
 
     
 
@@ -20,7 +20,7 @@ def run_distance():
         sensor_ids=[1],
         detector_config = DistanceConfig(
             start_m = 0.2, #you can change these parameters
-            end_m = 3.0
+            end_m = 1.5
         )
     )
 
